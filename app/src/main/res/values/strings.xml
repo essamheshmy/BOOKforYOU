@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">BOOKforYOU</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="book">BOOK</string>
+    <string name="f0r">for</string>
+    <string name="you">YOU</string>
 </resources>

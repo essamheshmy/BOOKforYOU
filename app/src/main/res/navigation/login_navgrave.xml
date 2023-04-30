@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/login_navgrave">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navgrave"
+    app:startDestination="@id/stertFragment">
 
+    <fragment
+        android:id="@+id/stertFragment"
+        android:name="com.essamhshmey.bookforyou.ui.StertFragment"
+        android:label="fragment_stert"
+        tools:layout="@layout/fragment_stert" >
+        <action
+            android:id="@+id/action_stertFragment_to_sinUPFragment"
+            app:destination="@id/sinUPFragment" />
+        <action
+            android:id="@+id/action_stertFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_stertFragment_to_btn_navgrev"
+            app:destination="@id/btn_navgrev" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.essamhshmey.bookforyou.ui.SinINFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_sin_i_n" >
+        <action
+            android:id="@+id/action_loginFragment_to_btn_navgrev"
+            app:destination="@id/btn_navgrev" />
+    </fragment>
+    <fragment
+        android:id="@+id/sinUPFragment"
+        android:name="com.essamhshmey.bookforyou.ui.SinUPFragment"
+        android:label="fragment_sin_u_p"
+        tools:layout="@layout/fragment_sin_u_p" >
+        <action
+            android:id="@+id/action_sinUPFragment_to_btn_navgrev"
+            app:destination="@id/btn_navgrev" />
+    </fragment>
+    <include app:graph="@navigation/btn_navgrave" />
 </navigation>

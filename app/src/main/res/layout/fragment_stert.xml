@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StertFragment"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:paddingHorizontal="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:paddingVertical="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/BOOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book"
+                android:textColor="@color/purple_500"
+                android:textSize="80dp"
+                android:textStyle="bold"
+
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/f0r"
+                    android:textColor="@color/black"
+                    android:textSize="50dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you"
+                    android:textColor="@color/purple_500"
+                    android:textSize="80dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sinup"
+            android:text="SinUP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          style="@style/my_btn_style"
+            />
+
+        <Button
+            android:id="@+id/btn_sinin"
+            android:text="SinIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/my_btn_style"
+           />
+
+    </LinearLayout>
+
+
+</FrameLayout>
