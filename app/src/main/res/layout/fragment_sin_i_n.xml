@@ -3,12 +3,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.SinINFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+        <LinearLayout
+            android:gravity="center"
+            android:paddingHorizontal="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="20dp">
+
+                <TextView
+                    android:id="@+id/BOOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book"
+                    android:textColor="@color/purple_500"
+                    android:textSize="80dp"
+                    android:textStyle="bold"
+
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/f0r"
+                        android:textColor="@color/black"
+                        android:textSize="50dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/you"
+                        android:textColor="@color/purple_500"
+                        android:textSize="80dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email"
+                style="@style/my_inpot_etxtfild_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:startIconDrawable="@drawable/email_24"
+                app:helperTextEnabled="true"
+                app:counterMaxLength="20"
+                android:hint="Enter your email"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginVertical="12dp"
+                android:id="@+id/password"
+                style="@style/my_inpot_etxtfild_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/password_24"
+                app:helperTextEnabled="true"
+                app:counterMaxLength="20"
+                android:hint="Enter your password"
+                app:helperText="Password must contain at least 8 characters"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btn_sinin"
+                style="@style/my_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SinIN" />
+            <Button
+                android:id="@+id/btn_sinup"
+                style="@style/my_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="SinUP" />
+
+        </LinearLayout>
 </FrameLayout>
