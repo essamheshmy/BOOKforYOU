@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login_navgrave"
-    app:startDestination="@id/btn_navgrev">
+    app:startDestination="@id/containerFragment">
 
     <fragment
         android:id="@+id/stertFragment"
@@ -16,27 +16,43 @@
         <action
             android:id="@+id/action_stertFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_stertFragment_to_btn_navgrev"
-            app:destination="@id/btn_navgrev" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.essamhshmey.bookforyou.ui.SinINFragment"
+        android:name="com.essamhshmey.bookforyou.ui.login_sinup_fragments.SinINFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_sin_i_n" >
         <action
-            android:id="@+id/action_loginFragment_to_btn_navgrev"
-            app:destination="@id/btn_navgrev" />
+            android:id="@+id/action_loginFragment_to_sinUPFragment"
+            app:destination="@id/sinUPFragment" />
     </fragment>
     <fragment
         android:id="@+id/sinUPFragment"
-        android:name="com.essamhshmey.bookforyou.ui.SinUPFragment"
+        android:name="com.essamhshmey.bookforyou.ui.login_sinup_fragments.SinUPFragment"
         android:label="fragment_sin_u_p"
         tools:layout="@layout/fragment_sin_u_p" >
         <action
-            android:id="@+id/action_sinUPFragment_to_btn_navgrev"
-            app:destination="@id/btn_navgrev" />
+            android:id="@+id/action_sinUPFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
-    <include app:graph="@navigation/btn_navgrave" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.essamhshmey.bookforyou.ui.login_sinup_fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_stertFragment"
+            app:destination="@id/stertFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_containerFragment"
+            app:destination="@id/containerFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_stertFragment2"
+            app:destination="@id/stertFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/containerFragment"
+        android:name="com.essamhshmey.bookforyou.ui.ContainerFragment"
+        android:label="fragment_container"
+        tools:layout="@layout/fragment_container" />
 </navigation>
