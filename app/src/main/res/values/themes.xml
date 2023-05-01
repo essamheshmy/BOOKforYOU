@@ -19,4 +19,9 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">30dp</item>
     </style>
+    <style name="my_inpot_etxtfild_style">
+        <item name="boxStrokeColor">@color/purple_700</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="android:textSize">30dp</item>
+    </style>
 </resources>
