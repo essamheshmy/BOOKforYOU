@@ -5,12 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import com.essamhshmey.bookforyou.R
+import com.essamhshmey.bookforyou.databinding.FragmentSinINBinding
 
 class SinINFragment : Fragment() {
+    private lateinit var binding: FragmentSinINBinding
+    private lateinit var mNavController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        mNavController=findNavController()
 
     }
 
@@ -18,6 +24,7 @@ class SinINFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        binding= FragmentSinINBinding.inflate(layoutInflater)
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_sin_i_n, container, false)
     }
