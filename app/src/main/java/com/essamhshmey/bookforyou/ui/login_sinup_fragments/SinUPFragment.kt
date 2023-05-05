@@ -30,9 +30,15 @@ class SinUPFragment : Fragment() {
         return binding.root
     }
 
+
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        binding.btnSinup.setOnClickListener{
+            mNavController.navigate(R.id.action_sinUPFragment_to_containerFragment)
+        }
+        binding.btnSinin.setOnClickListener{
+            mNavController.navigate(R.id.action_sinUPFragment_to_sinINFragment)
+        }
     }
-
 }

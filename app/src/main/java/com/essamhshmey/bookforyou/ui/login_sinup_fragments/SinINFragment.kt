@@ -29,6 +29,14 @@ class SinINFragment : Fragment() {
         // Inflate the layout for this fragment
         return binding.root
     }
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.btnSinin.setOnClickListener{
+            mNavController.navigate(R.id.action_sinINFragment_to_containerFragment)
+        }
+        binding.btnSinup.setOnClickListener{
+            mNavController.navigate(R.id.action_sinINFragment_to_sinUPFragment)
+        }
+    }
 
 }

@@ -31,7 +31,13 @@ class StertFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.btnSinup.setOnClickListener{
+            mNavController.navigate(R.id.action_stertFragment_to_sinUPFragment)
+        }
+        binding.btnSinin.setOnClickListener{
+            mNavController.navigate(R.id.action_stertFragment_to_sinINFragment)
 
+        }
     }
 
 }
