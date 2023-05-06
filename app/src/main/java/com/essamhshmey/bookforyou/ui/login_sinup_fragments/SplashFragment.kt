@@ -1,5 +1,6 @@
 package com.essamhshmey.bookforyou.ui.login_sinup_fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,6 +30,7 @@ class SplashFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.button.setOnClickListener {
             var l:Boolean=false
+
              if (l) {
                  mNavController.navigate(R.id.action_splashFragment_to_containerFragment)
              }else{
