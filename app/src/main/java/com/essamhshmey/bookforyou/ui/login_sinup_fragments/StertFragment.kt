@@ -1,4 +1,4 @@
-package com.essamhshmey.bookforyou.ui
+package com.essamhshmey.bookforyou.ui.login_sinup_fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

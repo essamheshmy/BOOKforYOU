@@ -6,7 +6,7 @@
     app:startDestination="@id/splashFragment">
     <fragment
         android:id="@+id/stertFragment"
-        android:name="com.essamhshmey.bookforyou.ui.StertFragment"
+        android:name="com.essamhshmey.bookforyou.ui.login_sinup_fragments.StertFragment"
         android:label="fragment_stert"
         tools:layout="@layout/fragment_stert" >
         <action

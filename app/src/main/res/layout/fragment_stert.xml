@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.StertFragment"
+    tools:context=".ui.login_sinup_fragments.StertFragment"
     android:gravity="center">
     <LinearLayout
         android:paddingHorizontal="6dp"
