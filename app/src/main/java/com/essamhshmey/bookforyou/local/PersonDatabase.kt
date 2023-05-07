@@ -1,5 +1,5 @@
 package com.essamhshmey.question.model.local
-
+/*
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.essamhshmey.question.model.entity.Person
@@ -12,4 +12,4 @@ abstract class PersonDatabase: RoomDatabase(){
 
 
 
-}
+}*/

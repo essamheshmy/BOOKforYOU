@@ -3,6 +3,7 @@ package com.essamhshmey.question.model.local
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
+/*
 import com.essamhshmey.question.model.entity.Person
 
 @Dao
@@ -15,4 +16,4 @@ interface PersonDao {
     @Query("SELECT * FROM person_table WHERE person_name = :name")
     fun getPerson(name:String):  Person
 
-}
+}*/

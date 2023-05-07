@@ -32,7 +32,7 @@
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_sinINFragment_to_containerFragment"
-            app:destination="@id/containerFragment"
+            app:destination="@id/containerActivity"
             app:popUpTo="@id/sinINFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -48,7 +48,7 @@
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_sinUPFragment_to_containerFragment"
-            app:destination="@id/containerFragment"
+            app:destination="@id/containerActivity"
             app:popUpTo="@id/sinUPFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -64,13 +64,14 @@
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_splashFragment_to_containerFragment"
-            app:destination="@id/containerFragment"
+            app:destination="@id/containerActivity"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
     </fragment>
-    <fragment
-        android:id="@+id/containerFragment"
-        android:name="com.essamhshmey.bookforyou.ui.ContainerFragment"
-        android:label="fragment_container"
-        tools:layout="@layout/fragment_container" />
+
+    <activity
+        android:id="@+id/containerActivity"
+        android:name="com.essamhshmey.bookforyou.ui.ContainerActivity"
+        android:label="activity_container"
+        tools:layout="@layout/activity_container" />
 </navigation>

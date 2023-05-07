@@ -6,23 +6,4 @@
     android:layout_height="match_parent"
     tools:context=".ui.ContainerFragment">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView2"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/btn_navgrave" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bakgrond"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
-        app:itemIconSize="30dp"
-        android:layout_gravity="bottom"
-        android:layout_margin="10dp"
-        app:menu="@menu/btn_menu"
-        />
 </FrameLayout>

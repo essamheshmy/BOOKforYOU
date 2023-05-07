@@ -42,15 +42,4 @@
 
         </LinearLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="stert"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:layout_gravity="bottom"
-        android:layout_marginVertical="80dp"
-        android:layout_marginHorizontal="20dp"
-        />
 </FrameLayout>
