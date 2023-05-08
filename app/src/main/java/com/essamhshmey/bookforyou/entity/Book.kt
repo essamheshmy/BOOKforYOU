@@ -8,17 +8,18 @@ import androidx.room.PrimaryKey
 data class Book(
    @PrimaryKey(autoGenerate = true) val uid: Int,
    @ColumnInfo(name = "book_name") val bookName:String,
-   @ColumnInfo(name = "author") val author:String,
-   @ColumnInfo(name = "section") val section:String,
-   @ColumnInfo(name = "languages") val languages:List<String>,
-   @ColumnInfo(name = "pageCounter") val pageCounter:Int,
-   @ColumnInfo(name = "fileType") val fileType:String,
-   @ColumnInfo(name = "fileSize") val fileSize:String,
-   @ColumnInfo(name = "dateCreated") val dateCreated:String,
-   @ColumnInfo(name = "description") val description:String,
-   @ColumnInfo(name = "quotes") val quotes:List<String>,
-   @ColumnInfo(name = "photoLink") val  photoLink:String,
-   @ColumnInfo(name = "noorbookLink") val noorbookLink:String
+   @ColumnInfo(name = "book_link") val bookLink:String,
+   @ColumnInfo(name = "book_author") val author:String,
+   @ColumnInfo(name = "book_section") val section:String,
+   @ColumnInfo(name = "book_languages") val languages:List<String>,
+   @ColumnInfo(name = "book_pageCounter") val pageCounter:Int,
+   @ColumnInfo(name = "book_fileType") val fileType:String,
+   @ColumnInfo(name = "book_fileSize") val fileSize:String,
+   @ColumnInfo(name = "book_dateCreated") val dateCreated:String,
+   @ColumnInfo(name = "book_description") val description:String,
+   @ColumnInfo(name = "book_quotes") val quotes:List<String>,
+   @ColumnInfo(name = "book_photoLink") val  photoLink:String,
+   @ColumnInfo(name = "book_noorbookLink") val noorbookLink:String
 ){
 
 }
