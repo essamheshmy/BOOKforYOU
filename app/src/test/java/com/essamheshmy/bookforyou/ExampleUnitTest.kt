@@ -1,4 +1,4 @@
-package com.essamhshmey.bookforyou
+package com.essamheshmy.bookforyou
 
 import org.junit.Test
 
